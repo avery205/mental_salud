@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salud mental</title>
+    <style>
+    body{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        background-color: #E20EFF;
+        margin:0;
+    }
+    nav{
+        background-color: rgb(194, 52, 223);
+        padding: 5%;
+        text-align: center;
+    }
+    nav a { 
+        color: rgb(24, 163, 117);
+        text-decoration: none;
+        background-color: rgb(128, 240, 240);
+        padding: 15px 20px;
+        margin:5px;
+        border-radius: 10px;
+        display:inline-block
+    }
+    nav a:hover {
+        background-color: rgb(141, 128, 255);
+        color:rgb(245, 7, 67)
+    }
+    h1{
+        text-align: center;
+        color:rgb(121, 70, 40)
+    }
+        h2{
+        text-align: center;
+        color:rgb(201, 131, 90)
+    }
+        h3{
+        text-align: center;
+        color:rgb(52, 64, 131)
+    }
+    img{
+        width:250px;
+        height: 200px;
+    }
+    .card{
+            background-color: #E20EFF;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(127, 96, 238, 0.1);
+            transition:0.3s;
+        }
+    .card img{
+            width: 250px;
+            height: 200px;
+            border-radius: 10px;
+    }
+    .contenedor{
+            display: flex;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin:auto
+            
+        }
+    .formulario{
+        background-color: rgb(141, 75, 167);
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgb(73, 45, 4);
+    }
+             input, select, textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #377081;
+        border-radius: 8px;
+        font-size: 15px;
+        background-color: rgb(192, 103, 219);
+    }
+    label{
+        font-weight: bold;
+        color: rgb(168, 125, 161);
+        margin-bottom: 6px;
+        margin-top: 15px;
+    }
+    textarea{
+        resize: vertical;
+        height: 120px;
+    }
+    button{
+        width: 100%;
+        background-color: rgb(224, 37, 115);
+        color: rgb(124, 18, 224);
+        padding: 14px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 17px;
+        margin-top: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+    <a href="inicio.html">INICIO</a>
+    <a href="descripcion.html">DESCRIPCION DEL PROGRAMA</a>
+    <a href="actividades.html">ACTIVIDADES RECREATIVAS</a>
+    <a href="formulario.html">FORMULARIO DE CONTACTO</a>
+    <a href="directorio.html">DIRECTORIO DE APOYO</a>
+    <a href="secciones.html">SECCIONES INFORMATIVAS</a>
+    <a href="creadores.html">CREADORES</a>
+    </nav>
+
+   <div class="formulario">
+    <h2>Formulario de contacto</h2>
+    <form action="#" method="post">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo">
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero">
+            <option value="">Seleccionar</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="no_esspecificar">prefiero no especificar</option>
+        </select>
+        <label for="edad">Edad:</label>
+        <select id="edad" name="edad">
+            <option value="">Seleccionar edad</option>
+            <option >14</option>
+            <option >15</option>
+            <option >16</option>
+            <option >17</option>
+            <option >18</option>
+            <option >19</option>
+            <option >20</option>
+            <option >21</option>
+            <option >22</option>
+            <option >23</option>            
+            <option >24</option>
+            <option >25</option>
+            <option >26</option>
+            <option >27</option>  
+            <option >28</option>
+            <option >29</option>
+            <option >30</option>
+            <option >31</option>
+            <option >32</option>
+            <option >33</option>
+            <option >34</option>
+            <option >35</option>
+            <option >36</option>
+            <option >37</option>
+            <option >38</option>            
+            <option >39</option>
+            <option >40</option>
+            <option >41</option>
+            <option >42</option>
+            <option >43</option>
+            <option >44</option>
+            <option >45</option>
+            <option >46</option>            
+            <option >47</option>
+            <option >48</option>
+            <option >49</option>
+            <option >50</option>
+            </select>
+            <label for="necesitas_ayuda">Necesitas ayuda psicologica??</label>
+            <select id="necesitas_ayuda" name="necesitas_ayuda">
+                <option value="">Seleccionar</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <label for="Que_tipo_de_problema_tienes">Que tipo de problema tienes??</label>
+            <select id="Que_tipo_de_problema_tienes" name="Que_tipo_de_problema_tienes">
+                <option value="">Seleccionar</option>
+                <option value="ansiedad">Ansiedad</option>
+                <option value="depresion">Depresión</option>
+                <option value="estres">Estrés</option>
+                <option value="problemas_de_pareja">Problemas de pareja</option>
+                <option value="problemas_familiares">Problemas familiares</option>
+                <option value="problemas_academicos">Problemas académicos</option>
+                <option value="otros">Otros</option>
+            </select>
+            <label for="asistes_al_psicologo">¿Asistes al psicólogo?:</label>
+            <select id="asistes_al_psicologo" name="asistes_al_psicologo">
+                <option value="">Seleccionar</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+            </select>
+            <label for="escribe_tu_problema">Escribe tu problema:</label>
+            <textarea id="escribe_tu_problema" name="escribe_tu_problema">escribe aqui</textarea>
+            <button type="submit">Enviar comentario</button>
+            
+    </form>
+   </div>
+</body>
+</html>
